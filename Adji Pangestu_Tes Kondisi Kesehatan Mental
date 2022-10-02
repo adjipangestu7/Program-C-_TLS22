@@ -7,7 +7,7 @@ int main()
 {
     int a, b, c, d, e, f, g, h, i, j, k, l, n;
     cout<<"\tTes Kesehatan Mental\n";
-    cout<<"________________\n";
+    cout<<"_____________________________________________\n";
     cout<<"Bagaimana kabarmu hari ini?\n";
     cout<<"Harap menjawab dengan jujur sesuai dengan kondisimu akhir-akhir ini.\n";
     cout<<"Jawab menggunakan angka 1 (satu) jika sesuai dan angka 0 (nol) jika tidak sesuai.\n\n";
