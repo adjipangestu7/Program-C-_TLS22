@@ -1,0 +1,55 @@
+//Tes Kondisi Kesehatan Mental//
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c, d, e, f, g, h, i, j, k, l, n;
+    cout<<"\tTes Kesehatan Mental\n";
+    cout<<"________________\n";
+    cout<<"Bagaimana kabarmu hari ini?\n";
+    cout<<"Harap menjawab dengan jujur sesuai dengan kondisimu akhir-akhir ini.\n";
+    cout<<"Jawab menggunakan angka 1 (satu) jika sesuai dan angka 0 (nol) jika tidak sesuai.\n\n";
+    
+    cout<<"Kamu merasa tidak sanggup mengatasi kesulitan\n";
+    cin>>a;
+    cout<<"Kamu merasa tidak bahagia dan tertekan\n";
+    cin>>b;
+    cout<<"Kamu merasa sulit untuk mengambil keputusan\n";
+    cin>>c;
+    cout<<"Kamu merasa mampu melakukan hal-hal yang bermanfaat dalam hidup\n";
+    cin>>d;
+    cout<<"Kamu bisa menikmati kegiatan atau pekerjaan sehari-harimu\n";
+    cin>>e;
+    cout<<"Kamu merasa tenang dan damai\n";
+    cin>>f;
+    cout<<"Kamu susah tidur karena khawatir\n";
+    cin>>g;
+    cout<<"Kamu bisa berkonsentrasi pada hal-hal yang sedang kamu kerjakan\n";
+    cin>>h;
+    cout<<"Kamu bisa menghadapi masalah-masalah yang ada\n";
+    cin>>i;
+    cout<<"Kamu merasa kehilangan kepercayaan diri\n";
+    cin>>j;
+    cout<<"Kamu merasa telah menjadi orang yang bahagia\n";
+    cin>>k;
+    cout<<"Kamu berpikir bahwa kamu adalah seorang yang tidak berguna\n";
+    cin>>l;
+    
+    n=a+b+c-d-e-f+g-h-i+j-k+l;
+    
+    if (n>=4&&n<=6)
+        cout<<"Kondisimu sangat buruk. Kondisi kesehatan mentalmu sedang tidak baik-baik saja.\nSaat ini kamu sedang dalam tekanan berat. Mungkin kamu merasakan kecemasan lebih dari yang kamu bisa tangani.\nMasalah yang kamu hadapi membuat kamu kurang menikmati dan kurang mampu mejalani kegiatan sehari-hari.\nMungkin kamu juga merasa tidak berdaya dalam menyelesaikan permasalahan yang kamu hadapi.";
+    else if(n>=2&&n<4)
+        cout<<"Kondisimu cukup buruk. Saat ini kamu mengalami banyak tekanan di hidupmu.\nKamu mungkin mulai merasa cemas dengan beberapa hal di hidupmu, dan kecemasan itu mulai memengaruhi kehidupan sehari-hari.\nSelain itu, kamu juga mulai merasa hilang kontrol akan hidupmu.";
+    else if (n>-4&&n<=-2)
+        cout<<"Kondisimu cukup baik. Meskipun kamu memiliki beban di hidupmu, namun kamu masih dapat mengatasinya.\nKamu juga bisa berkegiatan seperti biasa dan merasa punya kendali dalam hidupmu.";
+    else if (n>=-6&&n<=-4)
+        cout<<"Kondisimu sangat baik. Saat ini kamu dapat dikatakan sehat secara mental.\nKamu merasa nyaman dengan hidupmu. Kamu juga bisa berkegiatan dengan baik dan produktif.\nSelain itu, kamu juga cenderung memiliki kontrol penuh terhadap hidupmu.";
+    else
+        cout<<"Kondisimu sedang-sedang saja. Kondisi kesehatan mental kamu mungkin sedang tidak buruk, tapi juga tidak begitu baik.\nSaat ini kamu mengalami tekanan lebih banyak dari biasanya.\nKamu mungkin mulai merasa ragu apakah kamu dapat menangani tekanan yang kamu rasakan sekarang.";
+    
+
+    return 0;
+}
